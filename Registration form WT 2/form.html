@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            background-image: "";
+            background-size: cover;
+        }
+        body{
+            background-color:pink;
+        }
+        form{
+            background-color:pink;
+            padding: 60px;
+            border-radius: 40px;
+            box-shadow: 0,0,10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1> Registration form</h1>
+        <form onsubmit="returnvalidateform()">
+             <label> First name</label>
+             <input type="text"name="firstname"size="15"/><br><br>
+             <label> Last name</label>
+             <input type="text"name="lastname"size="15"/><br><br>
+             <label>Phone</label>
+             <input type="text"name="phone"size="10"/><br><br>
+       password:
+        <input type="password"id="pass"name="pass"/><br><br>
+    </form>
+        <button onclick="myfunction()">Submit</button>
+        <script>
+            function myfunction(){
+                alert("Registration form has been Submitted successfully");
+            }
+        </script>
+       </body>
+    </center>
+    
+</body>
+</html>

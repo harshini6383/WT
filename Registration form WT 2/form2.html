@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>FORM VALIDATION</title>
+    </head>
+    <body>
+        <script>
+            function data()
+            {
+            var a=document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+            var c=document.getElementById("n3").value;
+            var d=document.getElementById("n4").value;
+            if(a==""||b==""|c==""|d=="");
+        {
+            alert("All fields are mandatory");
+            return false;
+            } 
+            else
+            {
+                true;
+            }
+    }
+        </script>
+        <form onsubmit="return data()">
+            UserId: <input type="text" id="name">
+            Contact: <input type="text"id="n2">
+            password: <input type="password" id="n3">
+            Confirm password:<input type="password"id="n4">
+            <input type="Submit" value="submit your Data">
+            </form>
+    </body>
+    <body>
+        <h1>Your data has been submitted</h1>
+    </body>
+</html>
